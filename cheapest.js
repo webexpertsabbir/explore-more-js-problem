@@ -9,8 +9,8 @@ function cheapestPrice(phones){
     let cheapest = phones[0];
     for(let i = 0; i < phones.length; i++){
         const phone = phones[i];
-        if(phone.price < cheapest.price){
-            cheapest.phone;
+        if(phone.price > cheapest.price){
+            cheapest = phone;
         }
     }
     return cheapest;
